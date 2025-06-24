@@ -1,74 +1,81 @@
-body {
-  height: 100vh;
-  margin: 0;
-  background-color: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Arial', sans-serif;
-  direction: rtl;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
 }
-.card {
-  background-color: #2E6EFF;
-  width: 90%;
-  max-width: 400px;
-  padding: 30px 25px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+.container{
+    background-color: black;
+   min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
-
-.container {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
 }
-
-form {
-  display: flex;
-  flex-direction: column;
+.logo{
+    
+    width: 100px;
+     margin-right: 20%;
 }
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #FFFFFF;
+ul li{
+    
+    display:inline-block;
+}
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0px 5px;
 }
 
-label {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  font-weight: bold;
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+
+}
+.content .text {
+    width: 40%;
+    color: white ;
+    
+}
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+p{
+    margin: auto;
+    font-size: 10px;
+}
+.content .image{
+    width: 30%;
+}
+.content .image img{
+    width: 180px;
+}
+.icons{
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+
+}
+.icons img{
+    width: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.2);
 }
 
-input[type="text"],
-input[type="password"] {
-  padding: 10px;
-  border: 1px solid #FFFFFF;
-  border-radius: 6px;
-  font-size: 16px;
-}
 
-input[type="submit"] {
-  margin-top: 20px;
-  padding: 12px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-}
 
-input[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-small {
-  color: #FFFFFF;
-  font-size: 13px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
