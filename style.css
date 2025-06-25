@@ -3,8 +3,6 @@ body{
     margin: 0;
     background-color: black;
     color: hsl(0, 0%, 100%);
-    width: 100%;
-    min-height: 100vh;
 
 }
 .header{
@@ -41,7 +39,7 @@ body{
     border: solid #f8f8f8;
     border-radius: 5px;
     bordeer-color:
- }
+}
 H1:hover{
     color: #d99605;
     transition: 0.5s;
